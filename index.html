@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Calculadora | Dev for Tech</title>
+
+    <link rel="icon" href="/img/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h3>Calculadora | Dev For Tech</h3>
+    <div class="calcWrapper">
+      <div class="tela">
+        <input id="display" placeholder="0" disabled />
+        <h2 id="operacao"></h2>
+      </div>
+
+      <div class="flex-row">
+        <button class="button purple-text" onclick="limpar()">LIMPAR</button>
+        <div></div>
+        <div></div>
+        <button class="button gray" onclick="adicionarOp('/')">/</button>
+      </div>
+
+      <div class="flex-row">
+        <button class="button" onclick="adicionarNum(7)">7</button>
+        <button class="button" onclick="adicionarNum(8)">8</button>
+        <button class="button" onclick="adicionarNum(9)">9</button>
+        <button class="button gray" onclick="adicionarOp('*')">*</button>
+      </div>
+
+      <div class="flex-row">
+        <button class="button" onclick="adicionarNum(4)">4</button>
+        <button class="button" onclick="adicionarNum(5)">5</button>
+        <button class="button" onclick="adicionarNum(6)">6</button>
+        <button class="button gray" onclick="adicionarOp('-')">-</button>
+      </div>
+
+      <div class="flex-row">
+        <button class="button" onclick="adicionarNum(1)">1</button>
+        <button class="button" onclick="adicionarNum(2)">2</button>
+        <button class="button" onclick="adicionarNum(3)">3</button>
+        <button class="button gray" onclick="adicionarOp('+')">+</button>
+      </div>
+
+      <div class="flex-row">
+        <div></div>
+        <button class="button" onclick="adicionarNum(0)">0</button>
+        <button class="button" onclick="adicionarNum('.')">.</button>
+        <button class="button purple" onclick="total()">=</button>
+      </div>
+    </div>
+    <footer>
+      <p>
+        Projeto desenvolvido por
+        <a href="https://github.com/athosfranco">Athos Feitosa</a>
+      </p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
