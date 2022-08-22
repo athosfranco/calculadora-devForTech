@@ -27,8 +27,10 @@
       </div>
 
       <div class="flex-row">
-        <button class="button purple-text" onclick="limpar()">LIMPAR</button>
-        <div></div>
+        <button class="button purple-text" onclick="apagarUltimoInput()">
+          CE
+        </button>
+        <button class="button purple-text" onclick="limpar()">C</button>
         <div></div>
         <button class="button gray" onclick="adicionarOp('/')">/</button>
       </div>
@@ -58,7 +60,7 @@
         <div></div>
         <button class="button" onclick="adicionarNum(0)">0</button>
         <button class="button" onclick="adicionarNum('.')">.</button>
-        <button class="button purple" onclick="total()">=</button>
+        <button class="button purple" onclick="calcResultado()">=</button>
       </div>
     </div>
     <footer>
