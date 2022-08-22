@@ -1,6 +1,6 @@
-var input = document.querySelector("#display");
-var operador = "";
-var parar = false;
+let input = document.querySelector("#display");
+let operador = "";
+let parar = false;
 
 //INPUT PELO TECLADO
 document.addEventListener("keydown", (e) => {
@@ -28,7 +28,11 @@ document.addEventListener("keydown", (e) => {
 
     //pressionou Backspace
   } else if (e.key === "Backspace") {
-    apagarUltimoInput();
+    if (input.value.length > 1) {
+      apagarUltimoInput();
+    } else {
+      limpar();
+    }
   }
 });
 
@@ -59,6 +63,7 @@ const adicionarNum = (string) => {
 
 const apagarUltimoInput = () => {
   console.log(input.value);
+
   input.value = input.value.substring(0, input.value.length - 1);
 };
 

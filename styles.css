@@ -6,8 +6,10 @@
 }
 
 body {
-  background-color: #002244;
-  color: #111111;
+  background-image: url("http://st.gde-fon.com/wallpapers_original/76556_pejzazh_noch_gory_3463x2000_www.Gde-Fon.com.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
   font-size: 16px;
 
   align-items: center;
@@ -36,10 +38,15 @@ body {
 .calcWrapper {
   margin: 10px;
   border-radius: 25px;
-  background-color: #00468c;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+
   padding: 10px 20px;
   width: 252px;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .tela {
@@ -57,8 +64,8 @@ body {
   width: 100%;
 }
 
-.display h2 {
-  color: #5b7fff;
+.tela h2 {
+  color: #80a4f7;
   font-size: 15px;
   font-weight: 500;
   height: 18px;
@@ -92,22 +99,22 @@ body {
 }
 
 .gray {
-  border: 1px solid #5b7fff;
-  color: #5b7fff;
+  border: 1px solid #80a4f7;
+  color: #80a4f7;
 }
 
 .gray:hover {
-  background-color: #5b7fff;
+  background-color: #80a4f7;
   color: white;
 }
 
-.#5b7fff {
-  background-color: #5b7fff;
+.#80a4f7 {
+  background-color: #80a4f7;
   color: #f2f2f2;
 }
 
-.#5b7fff-text {
-  color: #5b7fff;
+.purple-text {
+  color: white;
 }
 
 footer {
