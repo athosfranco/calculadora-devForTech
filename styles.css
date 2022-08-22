@@ -27,7 +27,7 @@ body,
 input,
 textarea,
 button {
-  font-family: "Silkscreen", cursive;
+  font-family: "Gugi", cursive;
 }
 
 html,
@@ -114,7 +114,7 @@ body {
 }
 
 .purple-text {
-  color: white;
+  color: #80a4f7;
 }
 
 footer {
